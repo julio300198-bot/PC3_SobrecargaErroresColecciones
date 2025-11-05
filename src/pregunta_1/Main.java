@@ -1,11 +1,34 @@
 package pregunta_1;
 
-public class Main {
+public class Calculadora {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    
+    public int sumar(int a, int b) {
+        // Retorna la suma de dos números enteros
+        return a + b;
+    }
 
-		System.out.print("hola mundo");
-	}
+    public int sumar(int a, int b, int c) {
+        // Retorna la suma de tres números enteros
+        return a + b + c;
+    }
 
+    public double sumar(double a, double b) {
+        // Retorna la suma de dos números de tipo double
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        
+        Calculadora calc = new Calculadora();
+        
+        int resultado1 = calc.sumar(5, 10);
+        System.out.println("Suma de dos enteros (5 + 10): " + resultado1);
+
+        int resultado2 = calc.sumar(3, 7, 2);
+        System.out.println("Suma de tres enteros (3 + 7 + 2): " + resultado2);
+
+        double resultado3 = calc.sumar(4.5, 3.2);
+        System.out.println("Suma de dos doubles (4.5 + 3.2): " + resultado3);
+    }
 }
